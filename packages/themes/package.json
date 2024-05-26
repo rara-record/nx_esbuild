@@ -1,0 +1,26 @@
+{
+  "name": "@repo/themes",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "npm run clean && npm run build:js && npm run build:type",
+    "build:js": "node build.js",
+    "build:type": "tsc --emitDeclarationOnly",
+    "clean": "rm -rf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.16.17",
+    "typescript": "^5.4.5"
+  }
+}
