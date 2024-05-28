@@ -166,3 +166,37 @@ console.log(greet("World"));
     }
   },
 ```
+
+### Color Token
+
+CSS variable을 이용한 컬러 토큰 만들기
+
+1. CSS Object 파일 만들기
+2. 최종으로 쓰이는 곳에서 호출
+
+Output
+
+```javascript
+// packages/themes/scripts/build-css-module.js
+const vars = {
+  colors: {
+    gray: {
+      900: "#fffff0",
+    },
+  },
+};
+```
+
+CSS Module
+
+```css
+color: var(--gray-900);
+```
+
+CSS-in-JS
+
+```javascript
+styled.div`
+  color: ${vars.colors.gray[900]};
+`;
+```
