@@ -1,4 +1,8 @@
-# Front Projects
+# Services
+
+제품을 관리하는 곳입니다.
+
+- storybook, Docs, 웹 앱 빌더 서비스 등
 
 ## 모듈과 모듈 번들러
 

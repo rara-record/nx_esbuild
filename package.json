@@ -1,11 +1,16 @@
 {
   "name": "front-project",
   "version": "0.0.0",
+  "workspaces": [
+    "packages/**/*",
+    "services/**/*"
+  ],
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "packageManager": "yarn@4.2.2"
 }
