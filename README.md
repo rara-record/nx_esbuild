@@ -167,24 +167,32 @@ console.log(greet("World"));
   },
 ```
 
-### Color Token
+### Token 만들기
 
 CSS variable을 이용한 컬러 토큰 만들기
+타이포그라피 토큰 만들기
 
 1. CSS Object 파일 만들기
-2. 최종으로 쓰이는 곳에서 호출
-
-Output
+2. packages/themes/scripts/build-css-module.js
+3. npm run build:css
+4. Output (pacakges/themes/dist/themes.css)
+5. npm install file:../../packages/themes
 
 ```javascript
-// packages/themes/scripts/build-css-module.js
-const vars = {
-  colors: {
-    gray: {
-      900: "#fffff0",
-    },
-  },
-};
+// 결과물 예시
+
+:root {
+  --black-alpha-50: rgba(0, 0, 0, 0.04);
+  --black-alpha-100: rgba(0, 0, 0, 0.06);
+  --black-alpha-200: rgba(0, 0, 0, 0.08);
+  --black-alpha-300: rgba(0, 0, 0, 0.16);
+}
+
+.heading4xl {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 100%;
+}
 ```
 
 CSS Module
@@ -229,4 +237,20 @@ styled.div`
     });
   </script>
 </body>
+```
+
+className으로 사용
+
+```jsx
+const App = () => {
+  return <Text className='heading4xl'>HELLO</Text>;
+};
+```
+
+CSS-in-JS 사용
+
+```javascript
+const Text = styled.div`
+  ${classes.typography.heading["4xl"]};
+`;
 ```

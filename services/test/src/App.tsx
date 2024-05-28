@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { ThemeProvider } from "@emotion/react";
 import styled from "@emotion/styled";
-import { vars } from "@repo/themes";
+import { vars, classes } from "@repo/themes";
 
 function App() {
   const theme = {
@@ -21,7 +21,9 @@ const View = () => {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <Text>font color is {vars.colors.$static.light.red[500]}</Text>
+        <Text className='heading4xl'>
+          font color is {vars.colors.$static.light.red[500]}
+        </Text>
         <a
           className='App-link'
           href='https://reactjs.org'
@@ -36,6 +38,7 @@ const View = () => {
 };
 
 const Text = styled.p`
+  /* ${classes.typography.heading["4xl"]}; */
   color: ${vars.colors.$static.light.red[500]};
 `;
 
