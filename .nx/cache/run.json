@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "nx build test",
+    "startTime": "2024-05-28T10:15:26.038Z",
+    "endTime": "2024-05-28T10:15:38.386Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@repo/themes:build",
+      "target": "build",
+      "projectName": "@repo/themes",
+      "hash": "11644929930453670128",
+      "startTime": "2024-05-28T10:15:26.044Z",
+      "endTime": "2024-05-28T10:15:31.418Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "test:build",
+      "target": "build",
+      "projectName": "test",
+      "hash": "5925873378401967564",
+      "startTime": "2024-05-28T10:15:31.419Z",
+      "endTime": "2024-05-28T10:15:38.386Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}
