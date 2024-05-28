@@ -26,7 +26,36 @@
     -->
     <title>React App</title>
   </head>
-  <body class="theme-dark">
+  <body>
+    <!-- 
+      # https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+
+      body에 script를 넣어주는 이유
+      - 플리커현상 방지: HTML이 먼저 렌더링되고 나서 JavaScript가 실행되기 때문에 깜빡임을 줄일 수 있음.
+    -->
+    <script>
+      const isDarkMode = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+      if (isDarkMode) {
+        document.body.classList.add("theme-dark");
+      }
+
+      const mediaQueryList = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+      mediaQueryList.addEventListener("change", (e) => {
+        const isDarkMode = e.matches;
+
+        if (isDarkMode) {
+          document.body.classList.add("theme-dark");
+        } else {
+          document.body.classList.remove("theme-dark");
+        }
+      });
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

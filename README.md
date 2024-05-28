@@ -200,3 +200,33 @@ styled.div`
   color: ${vars.colors.gray[900]};
 `;
 ```
+
+사용하는 쪽의 index.html
+
+```html
+<body>
+  <script>
+    const isDarkMode = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    if (isDarkMode) {
+      document.body.classList.add("theme-dark");
+    }
+
+    const mediaQueryList = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    mediaQueryList.addEventListener("change", (e) => {
+      const isDarkMode = e.matches;
+
+      if (isDarkMode) {
+        document.body.classList.add("theme-dark");
+      } else {
+        document.body.classList.remove("theme-dark");
+      }
+    });
+  </script>
+</body>
+```
