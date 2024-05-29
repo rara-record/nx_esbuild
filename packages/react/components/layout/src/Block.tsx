@@ -1,5 +1,5 @@
-import { blockStyle } from "./block.css";
+import React from "react";
 
 export const Block = () => {
-  return <div className={blockStyle}>안녕</div>;
+  return <div>안녕</div>;
 };
