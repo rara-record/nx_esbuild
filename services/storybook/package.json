@@ -3,6 +3,8 @@
   "packageManager": "yarn@4.2.2",
   "devDependencies": {
     "@chromatic-com/storybook": "^1.5.0",
+    "@repo/react-components-layout": "workspace:^",
+    "@repo/themes": "workspace:^",
     "@storybook/addon-essentials": "^8.1.4",
     "@storybook/addon-interactions": "^8.1.4",
     "@storybook/addon-links": "^8.1.4",

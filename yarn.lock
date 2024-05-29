@@ -2591,7 +2591,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@repo/react-components-layout@workspace:packages/react/components/layout":
+"@repo/react-components-layout@workspace:^, @repo/react-components-layout@workspace:packages/react/components/layout":
   version: 0.0.0-use.local
   resolution: "@repo/react-components-layout@workspace:packages/react/components/layout"
   dependencies:
@@ -2617,6 +2617,8 @@ __metadata:
   resolution: "@repo/storybook@workspace:services/storybook"
   dependencies:
     "@chromatic-com/storybook": "npm:^1.5.0"
+    "@repo/react-components-layout": "workspace:^"
+    "@repo/themes": "workspace:^"
     "@storybook/addon-essentials": "npm:^8.1.4"
     "@storybook/addon-interactions": "npm:^8.1.4"
     "@storybook/addon-links": "npm:^8.1.4"
