@@ -122,6 +122,20 @@
       "data": {
         "root": "services/storybook",
         "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "metadata": {
+              "scriptContent": "storybook build",
+              "runCommand": "yarn build"
+            },
+            "dependsOn": [
+              "^build"
+            ],
+            "options": {
+              "script": "build"
+            },
+            "configurations": {}
+          },
           "storybook": {
             "executor": "nx:run-script",
             "options": {
@@ -130,17 +144,6 @@
             "metadata": {
               "scriptContent": "storybook dev -p 6006",
               "runCommand": "yarn storybook"
-            },
-            "configurations": {}
-          },
-          "build-storybook": {
-            "executor": "nx:run-script",
-            "options": {
-              "script": "build-storybook"
-            },
-            "metadata": {
-              "scriptContent": "storybook build",
-              "runCommand": "yarn build-storybook"
             },
             "configurations": {}
           },
@@ -9537,6 +9540,15 @@
         "version": "2.14.3",
         "packageName": "store2",
         "hash": "10c0/22e1096e6d69590672ca0b7f891d82b060837ef4c3e5df0d4563e6cbed14c52ddf2589fa94b79f4311b6ec41d95d6142e5d01d194539e0175c3fb4090cca8244"
+      }
+    },
+    "npm:storybook-addon-root-attributes@2.1.3": {
+      "type": "npm",
+      "name": "npm:storybook-addon-root-attributes@2.1.3",
+      "data": {
+        "version": "2.1.3",
+        "packageName": "storybook-addon-root-attributes",
+        "hash": "10c0/9e68a60a8e12c0cb6bc182f44ebf9e3b9d0e1e8449a509cc568b04ef2000bf281378bfa58b68aa23f3cd000db9e9b02f2d9ea9fe3b4dc7e103f9329a00f7bea3"
       }
     },
     "npm:storybook@8.1.4": {
