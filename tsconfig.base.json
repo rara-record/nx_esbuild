@@ -1,16 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ESNext", // 출력할 JavaScript 버전을 설정
+    "target": "ESNext", // 출력할 JavaScript 버전을 설정(ESNext === ECMAScript)
     "module": "ESNext", // 모듈 시스템을 설정
-    "lib": ["ESNext", "DOM"],
-    "declaration": true, // 타입 선언 파일을 생성
+    "lib": ["ESNext", "DOM"], // 컴파일 시 포함할 라이브러리 파일을 지정
+    "declaration": true, // 컴파일 시 타입 선언 파일(.d.ts)을 생성
     "strict": true, // 엄격한 타입 검사를 활성화
-    "moduleResolution": "node",
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "skipLibCheck": true
+    "moduleResolution": "node", // 모듈 해석 방식을 Node.js 스타일로 설정
+    "jsx": "react-jsx", // JSX 구문을 사용할 때 React 라이브러리와 호환되도록 설
+    "esModuleInterop": true, // ES 모듈과 CommonJS 모듈 간의 상호 운용성을 지원
+    "resolveJsonModule": true //  JSON 파일을 모듈로 가져올 수 있도록 허용
   }
 }
