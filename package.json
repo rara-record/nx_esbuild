@@ -9,7 +9,8 @@
   "main": "index.js",
   "scripts": {
     "build": "nx build",
-    "graph": "nx run-many --target=build --graph"
+    "graph": "nx run-many --target=build --graph",
+    "dev:storybook": "nx storybook @repo/storybook"
   },
   "author": "",
   "license": "ISC",
