@@ -6,6 +6,12 @@
     "declaration": true, // 타입 선언 파일을 생성
     "strict": true, // 엄격한 타입 검사를 활성화
     "moduleResolution": "node",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "skipLibCheck": true
   }
 }
