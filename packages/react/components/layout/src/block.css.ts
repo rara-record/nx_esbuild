@@ -4,5 +4,5 @@ import { vars } from "@repo/themes";
 export const blockStyle = style({
   width: "100px",
   height: "100px",
-  color: `${vars.colors.$scale.gray[100]}`,
+  color: vars.colors.$scale.pink[900],
 });

@@ -32,3 +32,15 @@
   }
 }
 ```
+
+## scripts
+
+```json
+  "scripts": {
+    "build": "nx build",
+    "graph": "nx run-many --target=build --graph", //  여러 프로젝트의 build 타겟을 실행하고 의존성 그래프 보기
+    "dev:all": "yarn dev:storybook & yarn dev:packages",
+    "dev:storybook": "nx storybook @repo/storybook", // 스토리북을 개발 모드로 실행
+    "dev:packages": "nx run-many --target=dev --projects='@repo/react-components-*'" // @repo/react-components- 에 대한 모든 프로젝트를 dev로 빌드
+  },
+```

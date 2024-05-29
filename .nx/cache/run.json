@@ -1,43 +1,21 @@
 {
   "run": {
-    "command": "nx build @repo/react-components-layout",
-    "startTime": "2024-05-29T10:31:58.343Z",
-    "endTime": "2024-05-29T10:32:07.497Z",
+    "command": "nx storybook @repo/storybook",
+    "startTime": "2024-05-29T11:41:10.917Z",
+    "endTime": "2024-05-29T11:43:42.379Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@repo/esbuild-config:build",
-      "target": "build",
-      "projectName": "@repo/esbuild-config",
-      "hash": "7934254378232982461",
-      "startTime": "2024-05-29T10:31:58.348Z",
-      "endTime": "2024-05-29T10:31:59.088Z",
+      "taskId": "@repo/storybook:storybook",
+      "target": "storybook",
+      "projectName": "@repo/storybook",
+      "hash": "6852542795520944406",
+      "startTime": "2024-05-29T11:41:10.920Z",
+      "endTime": "2024-05-29T11:43:42.378Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "@repo/themes:build",
-      "target": "build",
-      "projectName": "@repo/themes",
-      "hash": "7062689789845821904",
-      "startTime": "2024-05-29T10:31:59.089Z",
-      "endTime": "2024-05-29T10:32:02.956Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "@repo/react-components-layout:build",
-      "target": "build",
-      "projectName": "@repo/react-components-layout",
-      "hash": "7755780499949147218",
-      "startTime": "2024-05-29T10:32:02.957Z",
-      "endTime": "2024-05-29T10:32:07.497Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
+      "status": 1
     }
   ]
 }
