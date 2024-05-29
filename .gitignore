@@ -2,6 +2,8 @@
 *.log
 *.tsbuildinfo
 
+.nx
+
 .pnp.*
 .yarn/install-state.gz
 !.yarn/patches
