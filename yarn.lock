@@ -1049,6 +1049,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@repo/storybook@workspace:services/storybook":
+  version: 0.0.0-use.local
+  resolution: "@repo/storybook@workspace:services/storybook"
+  dependencies:
+    vite: "npm:^5.2.12"
+  languageName: unknown
+  linkType: soft
+
 "@repo/themes@workspace:^, @repo/themes@workspace:packages/themes":
   version: 0.0.0-use.local
   resolution: "@repo/themes@workspace:packages/themes"
@@ -6111,7 +6119,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.0, vite@npm:^5.0.11":
+"vite@npm:^5.0.0, vite@npm:^5.0.11, vite@npm:^5.2.12":
   version: 5.2.12
   resolution: "vite@npm:5.2.12"
   dependencies:

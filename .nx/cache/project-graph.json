@@ -105,6 +105,28 @@
         "tags": []
       }
     },
+    "@repo/storybook": {
+      "name": "@repo/storybook",
+      "type": "app",
+      "data": {
+        "root": "services/storybook",
+        "targets": {
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          }
+        },
+        "sourceRoot": "services/storybook",
+        "name": "@repo/storybook",
+        "projectType": "application",
+        "implicitDependencies": [],
+        "tags": []
+      }
+    },
     "@repo/themes": {
       "name": "@repo/themes",
       "type": "lib",
@@ -5922,6 +5944,7 @@
       }
     ],
     "@repo/esbuild-config": [],
+    "@repo/storybook": [],
     "@repo/themes": [
       {
         "source": "@repo/themes",
