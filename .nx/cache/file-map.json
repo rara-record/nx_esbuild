@@ -2,6 +2,7 @@
   "version": "6.0",
   "nxVersion": "19.1.0",
   "deps": {
+    "@storybook/addon-docs": "^8.1.4",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
@@ -32,7 +33,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "3451394487697095218"
+        "hash": "4608057275355864866"
       },
       {
         "file": ".idea/.gitignore",
@@ -132,7 +133,7 @@
       },
       {
         "file": "package.json",
-        "hash": "5539881420407924376"
+        "hash": "2202758780076036545"
       },
       {
         "file": "tsconfig.base.json",
@@ -144,34 +145,10 @@
       },
       {
         "file": "yarn.lock",
-        "hash": "4541110674165201838"
+        "hash": "7885597232008852087"
       }
     ],
     "projectFileMap": {
-      "@repo/storybook": [
-        {
-          "file": "services/storybook/README.md",
-          "hash": "2624393197388313932"
-        },
-        {
-          "file": "services/storybook/package.json",
-          "hash": "13082848687147334146"
-        }
-      ],
-      "@repo/esbuild-config": [
-        {
-          "file": "packages/esbuild-config/README.md",
-          "hash": "6886952344311067916"
-        },
-        {
-          "file": "packages/esbuild-config/index.js",
-          "hash": "2789728533718397977"
-        },
-        {
-          "file": "packages/esbuild-config/package.json",
-          "hash": "4177982842417762994"
-        }
-      ],
       "@repo/themes": [
         {
           "file": "packages/themes/READEME.md",
@@ -242,6 +219,46 @@
           "hash": "13731204961702934980"
         }
       ],
+      "@repo/storybook": [
+        {
+          "file": "services/storybook/.storybook/main.js",
+          "hash": "11078301725031675987"
+        },
+        {
+          "file": "services/storybook/.storybook/preview.js",
+          "hash": "2971778210824951238"
+        },
+        {
+          "file": "services/storybook/README.md",
+          "hash": "2624393197388313932"
+        },
+        {
+          "file": "services/storybook/package.json",
+          "hash": "15376353941981954656",
+          "deps": [
+            "@repo/react-components-layout",
+            "@repo/themes"
+          ]
+        },
+        {
+          "file": "services/storybook/stories/ReactComponents/Layout/Block.stories.tsx",
+          "hash": "4197853478859637331"
+        }
+      ],
+      "@repo/esbuild-config": [
+        {
+          "file": "packages/esbuild-config/README.md",
+          "hash": "6886952344311067916"
+        },
+        {
+          "file": "packages/esbuild-config/index.js",
+          "hash": "2789728533718397977"
+        },
+        {
+          "file": "packages/esbuild-config/package.json",
+          "hash": "4177982842417762994"
+        }
+      ],
       "@repo/react-components-layout": [
         {
           "file": "packages/react/components/layout/build.js",
@@ -249,7 +266,7 @@
         },
         {
           "file": "packages/react/components/layout/package.json",
-          "hash": "14479438392693514196",
+          "hash": "15921429382378701881",
           "deps": [
             "@repo/esbuild-config",
             "@repo/themes",
