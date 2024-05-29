@@ -10,7 +10,7 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./styled.css": "./dist/index.css"
+    "./style.css": "./dist/index.css"
   },
   "scripts": {
     "build": "yarn run clean && yarn run build:js && yarn run build:type && yarn run build:css",
