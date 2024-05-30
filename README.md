@@ -1,6 +1,13 @@
 # front-project
 
-## nx.json
+## Nx
+
+모노레포 관리 도구 중 하나인 Nx
+
+> 모노레포
+여러 프로젝트를 하나의 리포지토리에서 효율적으로 관리하고, 빌드, 테스트, 배포 작업을 최적화합니다.
+
+### nx.json
 
 [공식문서](https://nx.dev/reference/nx-json)
 
@@ -33,7 +40,7 @@
 }
 ```
 
-## scripts
+## root package.json
 
 ```json
   "scripts": {
