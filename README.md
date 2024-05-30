@@ -1,4 +1,4 @@
-# Front-Project #1
+# nx_esbuild
 
 - 패키지 매니저: yarn berry
 - 빌드 시스템 도구 : Nx
